@@ -4,7 +4,7 @@ import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import json
-from openai import OpenAI
+import openai
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
@@ -15,8 +15,7 @@ load_dotenv()
 # Retrieve API keys from environment variables
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
-
-client = OpenAI(api_key=OPENAI_API_KEY)
+openai.api_key=OPENAI_API_KEY
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -258,7 +257,7 @@ def generate_ai_suggestions(title, description, tags):
         '''
 
     try:
-        response = client.chat.completions.create(
+        response = openai.ChatCompletions.create(
             model="gpt-4o-mini",  # Use "gpt-4" or another valid model name
             messages=[{"role": "system", "content": prompt}],
             temperature=0.7
