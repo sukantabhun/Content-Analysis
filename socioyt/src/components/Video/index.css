@@ -1,0 +1,131 @@
+.form-container {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.input-element {
+  width: 800px;
+  height: 25px;
+  padding: 15px;
+  border: lightgray solid 2px;
+  border-radius: 12px;
+}
+.proceed-button {
+  background-color: transparent;
+  border: none;
+  height: 35px;
+}
+.proceed-button svg {
+  display: inline-block;
+  color: black; /* Adjust color as needed */
+  font-size: 16px; /* Adjust size as needed */
+}
+.form-wrapper {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  justify-self: start;
+}
+.output-container {
+  margin-top: 25px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Add this to your CSS */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.output-details-container,
+details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Add the sentiment bar styles */
+.sentiment-bar {
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 500px;
+  transition: background-color 0.5s ease;
+}
+
+.sentiment-text {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  width: 100%;
+}
+.unordered-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 400px;
+  row-gap: 25px;
+  justify-content: space-between;
+}
+.text-description {
+  width: 1000px;
+}
+.suggestions-text {
+  font-size: larger;
+  max-width: 600px;
+  text-align: left;
+}
+.text-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  color: #00bfff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  color: #3498db;
+}
+code {
+  align-self: flex-start;
+}
+.heading-sec {
+  font-size: 50px;
+}

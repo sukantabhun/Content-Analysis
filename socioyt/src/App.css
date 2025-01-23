@@ -1,0 +1,79 @@
+/* General App Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.Navbar {
+  background-color: #282c34;
+  padding: 10px 20px;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar ul li {
+  margin: 0 15px;
+}
+
+.Navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Home Component Styles */
+.Home {
+  padding: 50px 20px;
+}
+
+.Home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.Home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}

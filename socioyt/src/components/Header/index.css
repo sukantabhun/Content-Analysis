@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center the items vertically */
+  width: 100vw;
+  padding: 20px;
+  height: 7vh;
+  background-color: white; /* Change header background to white */
+  color: #333; /* Change text color for better contrast */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow beneath the header */
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.logo {
+  width: 70px; /* Set the width of the logo */
+  height: 70px; /* Maintain aspect ratio */
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for logo */
+.logo-container:hover {
+  transform: scale(1.1); /* Scale the logo on hover */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px; /* Center the logo vertically */
+  padding: 15px;
+  column-gap: 10px;
+  color: #0cdda4;
+}
+
+.signin-container {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 25px;
+}
+.signin-container Link {
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+}
+.signin-container-Link {
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+}

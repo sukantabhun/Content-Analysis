@@ -1,0 +1,53 @@
+.ordered-list-channel {
+  text-align: start;
+}
+.list-item {
+  display: flex;
+  column-gap: 15px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.engagement-card {
+  grid-column: span 2;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .engagement-card {
+    grid-column: span 1;
+  }
+}
+.list-item-container {
+  display: flex;
+  height: 250px;
+  column-gap: 25px;
+  margin-bottom: 25px;
+}
+.heading-sec {
+  font-size: 50px;
+}
